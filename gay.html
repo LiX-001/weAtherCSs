@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>THE TITLE IS GAY ASF</title>
+    <link rel="stylesheet" href="duck.css">
+</head>
+<body bgcolor="black">
+    <div class="c-container">
+        <div class="circle" id="circle">
+             <div class="Music">
+              <button class="music-button" id="music-button">♫</button>
+              <div class="speaker" id="speaker">...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br></div>
+              </div>
+            <div class="screen" id="screen"></div>
+            <div class="cover" id="cover"></div>
+            <button class="power" id="power"></button>
+            <div class="weather-controls">
+              <button class="rain-button" id="rain-button">🌧</button>
+              <button class="fog-button" id="fog-button">༄</button>
+              <button class="thunder-button" id="thunder-button">🗲</button>
+              <button class="snow-button" id="snow-button">❅</button>
+            </div>
+            <div class="time" id="time">
+              <div class="vbox">
+              <p class="t" id="h">00</p>
+              </div>
+              <div class="vbox">
+              <div class="i" id="i">+</div>
+              <p class="t" id="colon">:</p>
+              <div class="i" id="d">-</div>
+              </div>
+              <div class="vbox">
+              <p class="t" id="m">00</p>
+              </div>
+              <div class="vbox">
+              <p class="t" id="meridian"></p>
+              </div>
+            </div>
+            <div class="knob" id="knob">
+                <div class="content"></div>
+                <p id="temp"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="landscape" id="landscape">
+      <div class="dimness" id="dimness">
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+      </div>
+        <div class="mountain">
+            <div class="mountain-top">
+              <div class="mountain-cap-1"></div>
+              <div class="mountain-cap-2"></div>
+              <div class="mountain-cap-3"></div>
+            </div>
+          </div>
+          <div class="mountain-two">
+            <div class="mountain-top">
+              <div class="mountain-cap-1"></div>
+              <div class="mountain-cap-2"></div>
+              <div class="mountain-cap-3"></div>
+            </div>
+          </div>
+           <div class="mountain-three">
+            <div class="mountain-top">
+              <div class="mountain-cap-1"></div>
+              <div class="mountain-cap-2"></div>
+              <div class="mountain-cap-3"></div>
+            </div>
+          </div>
+          <div class="cloud"></div>
+          <div class="cloud2"></div>
+          <div class="cloud3"></div>
+          
+          <div class="slope">
+            <div class="tree1">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree2">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree3">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree4">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree5">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree6">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+              <div class="tree7">
+                <div class="canopy1"></div>
+                <div class="canopy2"></div>
+                <div class="canopy3"></div>
+                <div class="base"></div>
+              </div>
+          </div>
+          <div class="slope2"></div>
+
+          <!--Rain, thunder fog and snowfall-->
+          
+            <div class="rain" id="rain"></div>
+            <div class="fog" id="fog"></div>
+            <div class="thunder" id="thunder"></div>
+            <div class="snow" id="snow">
+              <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake" id="sf1">
+                ❅
+                </div>
+                <div class="snowflake" id="sf2">
+                ❆
+                </div>
+                <div class="snowflake" id="sf3">
+                ❄
+                </div>
+                <div class="snowflake" id="sf4">
+                ❅
+                </div>
+                <div class="snowflake" id="sf5">
+                ❆
+                </div>
+                <div class="snowflake" id="sf6">
+                *
+                </div>
+                <div class="snowflake" id="sf7">
+                ❅
+                </div>
+                <div class="snowflake" id="sf8">
+                ❆
+                </div>
+                <div class="snowflake" id="sf9">
+                ❄
+                </div>
+            </div>
+
+
+          <!--Temperature blocks!-->
+          <div class="warmth" id="warmth"></div>
+          <div class="coldness" id="coldness"></div>
+    </div>
+
+    <div class="musicbox">
+      <audio loop class="ambient" id="morning" src="urgay. [ambient tracks]\amb0bsed_Ch01_Morning.wav"></audio>
+              <audio muted loop class="ambient" id="guitar1" src="urgay. [ambient tracks]\amb0bsed_Ch02_Guitar.wav"></audio>
+              <audio muted loop class="ambient" id="glitches" src="urgay. [ambient tracks]\amb0bsed_Ch03_Glitches.wav"></audio>
+              <audio muted loop class="ambient" id="piano" src="urgay. [ambient tracks]\amb0bsed_Ch04_Piano.wav"></audio>
+              <audio muted loop class="ambient" id="birds" src="urgay. [ambient tracks]\amb0bsed_Ch05_Birds.wav"></audio>
+              <audio muted loop class="ambient" id="night" src="urgay. [ambient tracks]\amb0bsed_Ch06_Night.wav"></audio>
+              <audio muted loop class="ambient" id="bass" src="urgay. [ambient tracks]\amb0bsed_Ch07_Bass.wav"></audio>
+              <audio muted loop class="ambient" id="guitar2" src="urgay. [ambient tracks]\amb0bsed_Ch08_Guitar 2.wav"></audio>
+              <audio muted loop class="ambient" id="funk" src="urgay. [ambient tracks]\amb0bsed_Ch09_Funk.wav"></audio>
+              <audio muted loop class="ambient" id="fmpad" src="urgay. [ambient tracks]\amb0bsed_Ch10_FM Pad.wav"></audio>
+              <audio muted loop class="ambient" id="beats" src="urgay. [ambient tracks]\amb0bsed_Ch11_Beats.wav"></audio>
+              <audio muted loop class="ambient" id="rain-a" src="urgay. [ambient tracks]\amb0bsed_Ch12_Rain.wav"></audio>
+              <audio muted loop class="ambient" id="thunder-a" src="urgay. [ambient tracks]\amb0bsed_Ch13_Thunder.wav"></audio>
+              <audio muted loop class="ambient" id="fog-a" src="urgay. [ambient tracks]\amb0bsed_Ch14_Fog wind.wav"></audio>
+              
+    </div>
+</body>
+<script>
+    const circle = document.getElementById('circle');
+    const dimness = document.getElementById('dimness');
+    const cover = document.getElementById('cover');
+    const knob = document.getElementById("knob");
+    const temp = document.getElementById('temp');
+    const content = document.querySelector('#knob .content');
+    const music_button = document.getElementById('music-button');
+    // Weather buttons
+    const rain_button = document.getElementById('rain-button');
+    const fog_button = document.getElementById('fog-button');
+    const thunder_button = document.getElementById('thunder-button');
+    const snow_button = document.getElementById('snow-button');
+
+    // Weather screens
+    const rain = document.getElementById('rain');
+    const fog = document.getElementById('fog');
+    const thunder = document.getElementById('thunder');
+    const snow = document.getElementById('snow');
+
+    var isRaining = false;
+    var isFogging = false;
+    var isThundering = false;
+    var isSnowing = false;
+
+    // Time
+    const time = document.getElementById('time');
+    const time_control_buttons = document.getElementsByClassName('i');
+    const time_display = document.getElementsByClassName('t');
+    const hour = document.getElementById('h');
+    const minutes = document.getElementById('m');
+    const meridian = document.getElementById('meridian');
+    const increase = document.getElementById('i');
+    const decrease = document.getElementById('d');
+
+    var t = 12;
+
+    // The landscape
+    const landscape = document.getElementById('landscape');
+
+    // Ambient Music
+    const ambient = document.getElementsByClassName('ambient');
+    for (let i = 0; i  <= 13; i++) {
+      ambient[i].volume = 0.5;
+    }
+    var music_status = 0;
+    function addAmbience(a) {
+      if (music_status != 0) {
+        const track = document.getElementById(a);
+        console.log(track);
+        if (track.paused) { track.play(); };
+        track.muted = false;
+      }
+    };
+    function removeAmbience(a) {
+      if (music_status != 0) {
+        const track = document.getElementById(a);
+        if (track.paying) { track.pause(); };
+        track.muted = true;
+      }
+    };
+    function playAccordingToTime() {
+      if (t >= 6 && t <=12) {
+            addAmbience("morning");
+            addAmbience("birds");
+            addAmbience("piano");
+            addAmbience("glitches");
+            addAmbience("guitar1");
+            removeAmbience("night");
+            removeAmbience("bass");
+            removeAmbience("funk");
+            removeAmbience("fmpad");
+            removeAmbience("beats");
+          }
+          if (t > 12 && t <= 16) {
+            addAmbience("guitar1");
+            addAmbience("glitches");
+            removeAmbience("morning");
+            removeAmbience("birds");
+            removeAmbience("piano");
+            removeAmbience("night");
+            removeAmbience("bass");
+            removeAmbience("funk");
+            removeAmbience("fmpad");
+            removeAmbience("beats");
+          }
+          if (t < 6 || t > 16) {
+            addAmbience("night");
+            addAmbience("guitar2");
+            addAmbience("glitches");
+            addAmbience("bass");
+            addAmbience("funk");
+            addAmbience("fmpad");
+            addAmbience("beats");
+            removeAmbience("guitar1");
+            removeAmbience("morning");
+            removeAmbience("birds");
+            removeAmbience("piano");
+          }
+    }
+      music_button.addEventListener('click', function() {
+        if (music_status == 0) {
+          music_status = 1;
+          music_button.style.backgroundColor = 'rgb(255, 0, 0)';
+          playAccordingToTime();
+          if (isRaining == true) { addAmbience("rain-a"); } else { removeAmbience("rain-a"); };
+          if (isThundering == true) { addAmbience("thunder-a"); } else { removeAmbience("thunder-a"); };
+          if (isFogging == true) { addAmbience("fog-a"); } else { removeAmbience("fog-a"); };
+        } else {
+          music_status = 0;
+          music_button.style.backgroundColor = 'transparent';
+          const ambient = document.getElementsByClassName('ambient');
+            for (let i = 0; i  <= 13; i++) {
+              if (ambient[i].paying) { ambient[i].pause(); };
+              ambient[i].muted = true;
+            }
+          }
+      });
+
+    // Temperature Knob
+    knob.addEventListener('mousedown', function() {
+        knob.addEventListener('mousemove', handleKnob);
+
+        knob.addEventListener('mouseup', function() {
+            knob.removeEventListener('mousemove', handleKnob);    
+        });
+    });
+
+    function handleKnob(event) {
+        const rect = knob.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+        const rotation = Math.abs((angle * (180 / Math.PI) + 90)%360);
+        content.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+
+        // Convert rotation to temperature
+        const ub = 40; // Upper bound (40 degree Celsius)
+        const lb = -40; // Lower bound (-40 degree Celsius)
+        rotation_percent = Math.min(Math.max(rotation, 0), 100);
+        const value = Math.floor(rotation_percent / 100 * (ub - lb)) - ub;
+        temp.innerHTML = value.toString() + "°C";
+        
+        // Adjust temperature in landscape
+        adjust_temp(value)
+    }
+
+    // Function for adjusting temperature
+    function adjust_temp(temp) {
+        const warmth = document.getElementById('warmth');
+        const coldness = document.getElementById('coldness');
+        warmth_percentage = 50;
+        coldness_percentage = 50;
+        if (temp >= 20) {
+            warmth.style.display = 'flex';
+            coldness.style.display = 'none';
+            warmth_percentage += 2.5 * (temp-20);
+        } else if (temp <= 20) {
+            coldness.style.display = 'flex';
+            warmth.style.display = 'none';
+            coldness_percentage += 2.5 * (temp+60);
+        }
+
+        warmth.style.filter  = `opacity(${warmth_percentage}%)`;
+        coldness.style.filter  = `opacity(${coldness_percentage}%)`;
+    };
+
+    // Function for adjusting time.
+    function adjust_time(h) {
+      if (h > 12) {
+        h = h-12;
+        m = 'PM';
+      } else {
+        m = 'AM';
+      }
+
+      if (h > 12 || h == 0) {
+        h = 1;
+        if (meridian.textContent == 'AM') {  m = 'PM' }
+        if (meridian.textContent == 'PM') {  m = 'AM' }
+      }
+      if (h == null) { h = '00'; m = ""; }
+      hour.textContent = h.toString().padStart(2,'0');
+      meridian.textContent = m;
+    };
+
+    function getTime() {
+      h = parseInt(hour.textContent);
+      if (meridian.textContent == 'AM') {
+        x = h;
+      } else if (meridian.textContent == 'PM') {
+        x = h+12;
+      }
+      return x;
+    }
+
+    increase.addEventListener('click', function() {
+      h = parseInt(hour.textContent);
+      if (meridian.textContent == 'AM') {
+        x = h+1;
+      } else if (meridian.textContent == 'PM') {
+        x = (h+1)+12;
+      }
+      t = x;
+      adjust_time(x);
+      if (x >= 16 && x <= 24) {
+        i = x-16;
+      } else if (x >= 0 && x <= 6) {
+        i = x+8;
+      } else if (x == 25) {i = 9;} else if (x >= 6 && x <= 16) {i = 0;}
+      increment = i*8.3;
+      dimness.style.opacity = `${increment}%`;
+      playAccordingToTime();
+    });
+    decrease.addEventListener('click', function() {
+      h = parseInt(hour.textContent);
+      if (meridian.textContent == 'AM') {
+        x = h-1;
+      } else if (meridian.textContent == 'PM') {
+        x = (h-1)+12;
+      }
+      t = x;
+      adjust_time(x);
+      if (x >= 16 && x <= 24) {
+        i = x-16;
+      } else if (x >= 0 && x <= 6) {
+        i = x+8;
+      } else if (x == 25) {i = 9;} else if (x >= 6 && x <= 16) {i = 0;}
+      increment = i*8.3;
+      dimness.style.opacity = `${increment}%`;
+      playAccordingToTime();
+    });
+    
+    function power(x) {
+        if (x == "on") {
+            circle.style.animation = `turnon-main 1s ease-in-out 1 forwards`;
+            cover.style.animation = `turnon-cover 1s ease-in-out 1 forwards`;
+            power_button.style.animation = `turnon-power-button 1s 1s ease-in-out 1 forwards`;
+            rain_button.style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            fog_button.style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            thunder_button.style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            snow_button.style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            music_button.style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            for (var i = 0; i < time_control_buttons.length; i++) {
+              time_control_buttons[i].style.animation = `turnon-buttons 1s 1s ease-in-out 1 forwards`;
+            };
+            for (var i = 0; i < time_display.length; i++) {
+              time_display[i].style.animation = `turnon-time 3s ease-in-out 1 forwards`;
+            }
+
+            content.style.animation = `turnon-power-button 1s 1s ease-in-out 1 forwards`;
+            time.style.animation = `turnon-power-button 1s 1s ease-in-out 1 forwards`;
+            temp.style.animation = `turnon-temp 2s 1s ease-in-out 1 forwards`;
+            landscape.style.animation = `turnon-screen 2s 2s ease-in-out 1 forwards`;
+            temp.innerHTML = "19" + "°C";
+            adjust_temp(19);
+            adjust_time(12);
+        } else if (x == 'off') {
+            circle.style.animation = `turnoff-main 1s ease-in-out 1 forwards`;
+            cover.style.animation = `turnoff-cover 1s ease-in-out 1 forwards`;
+            power_button.style.animation = `turnoff-power-button 1s ease-in-out 1 forwards`;
+            rain_button.style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            fog_button.style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            thunder_button.style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            snow_button.style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            music_button.style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            for (var i = 0; i <time_control_buttons.length; i++) {
+              time_control_buttons[i].style.animation = `turnoff-buttons 1s ease-in-out 1 forwards`;
+            };
+            for (var i = 0; i < time_display.length; i++) {
+              time_display[i].style.animation = `turnoff-time 3s ease-in-out 1 forwards`;
+            }
+
+            content.style.animation = `turnoff-power-button 1s ease-in-out 1 forwards`;
+            time.style.animation = `turnoff-power-button 1s ease-in-out 1 forwards`;
+            temp.style.animation = `turnoff-temp 2s 1s ease-in-out 1 forwards`;
+            landscape.style.animation = `turnoff-screen 2s ease-in-out 1 forwards`;
+            temp.innerHTML = "";
+            adjust_time(null);
+        }
+    }
+
+    const power_button = document.getElementById('power');
+    var v = 0
+    var on = new Audio('urgay. [ambient tracks]/Sf 1 on.wav');
+    var off = new Audio('urgay. [ambient tracks]/Sf 0 off.wav');
+    power_button.addEventListener('click', function() {
+        if (v == 0) {
+            power('on');
+            v = 1;
+            on.play();
+        } else if (v == 1) {
+            power('off');
+            v = 0;
+            off.play();
+        }
+    });
+
+    // Rain
+    rain_button.addEventListener('click', function() {
+      if (isRaining == false) {
+        rain_button.style.backgroundColor = 'rgb(255, 0, 0)';
+        let raindropCount = 500;
+        for (let i = 0; i < raindropCount; i++) {
+          const raindrop = document.createElement('div');
+          raindrop.classList.add('raindrop');
+          raindrop.style.left = `${Math.random() * 100}%`;
+          raindrop.style.animationDuration = `${Math.random() * 2 + 1}s`;
+          rain.appendChild(raindrop);
+        }
+        rain.style.display = 'flex';
+        landscape.style.backgroundImage = `radial-gradient(ellipse , rgba(29, 31, 34, 0.788), rgba(19, 23, 27, 0.342))`;
+        isRaining = true
+        addAmbience('rain-a');
+        } 
+        else if (isRaining == true) {
+          raindropCount = 0;
+          rain_button.style.backgroundColor = 'transparent';
+          rain.style.display = 'none';
+          landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
+          isRaining = false; 
+          removeAmbience('rain-a');
+          }
+        });
+
+      // Fog
+      fog_button.addEventListener('click', function(){
+        if (isFogging == false) {
+          fog_button.style.backgroundColor = 'rgb(255, 0, 0)';
+          landscape.style.backgroundImage = `radial-gradient(ellipse, rgba(158, 158, 158, 0.76), rgba(202, 202, 202, 0.42))`;
+          fog.style.opacity = '90%';
+          temp.innerHTML = "2°C"
+          adjust_temp(2)
+          isFogging = true;
+          addAmbience('fog-a');
+        } else if (isFogging == true) {
+          fog_button.style.backgroundColor = 'transparent';
+          landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
+          fog.style.opacity = '0%';
+          isFogging = false;
+          removeAmbience('fog-a');
+        }
+      });
+
+      // Thunder
+      thunder_button.addEventListener('click', function() {
+        if (isThundering == false) {
+          thunder_button.style.backgroundColor = 'rgb(255, 0, 0)';
+          landscape.style.backgroundImage = `radial-gradient(ellipse, rgba(27, 26, 26, 0.76), rgba(5, 5, 7, 0.562))`;
+          thunder.style.display = 'flex';
+          isThundering = true
+          addAmbience('thunder-a');
+        } else if (isThundering == true) {
+          thunder_button.style.backgroundColor = 'transparent';
+          landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
+          thunder.style.display = 'none';
+          isThundering = false;
+          removeAmbience('thunder-a');
+        }
+      });
+
+      //Snow
+      snow_button.addEventListener('click', function() {
+        if (isSnowing == false) {
+          snow_button.style.backgroundColor = 'rgb(255, 0, 0)';
+          landscape.style.backgroundImage = `radial-gradient(ellipse, rgba(158, 158, 158, 0.76), rgba(202, 202, 202, 0.42))`;
+          snow.style.opacity = '90%';
+          temp.innerHTML = "0°C"
+          adjust_temp(0)
+          isSnowing = true
+        } else if (isSnowing == true) {
+          snow_button.style.backgroundColor = 'transparent';
+          landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
+          snow.style.opacity = '0%';
+          temp.innerHTML = "19°C"
+          adjust_temp(19)
+          isSnowing = false;
+        }
+      });
+</script>
+</html>
