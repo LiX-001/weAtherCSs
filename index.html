@@ -11,39 +11,10 @@
               <button class="music-button" id="music-button">♫</button>
               <div class="speaker" id="speaker">...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br></div>
               </div>
+    <div class="mainscreen">
             <div class="screen" id="screen"></div>
             <div class="cover" id="cover"></div>
-            <button class="power" id="power"></button>
-            <div class="weather-controls">
-              <button class="rain-button" id="rain-button">🌧</button>
-              <button class="fog-button" id="fog-button">༄</button>
-              <button class="thunder-button" id="thunder-button">🗲</button>
-              <button class="snow-button" id="snow-button">❅</button>
-            </div>
-            <div class="time" id="time">
-              <div class="vbox">
-              <p class="t" id="h">00</p>
-              </div>
-              <div class="vbox">
-              <div class="i" id="i">+</div>
-              <p class="t" id="colon">:</p>
-              <div class="i" id="d">-</div>
-              </div>
-              <div class="vbox">
-              <p class="t" id="m">00</p>
-              </div>
-              <div class="vbox">
-              <p class="t" id="meridian"></p>
-              </div>
-            </div>
-            <div class="knob" id="knob">
-                <div class="content"></div>
-                <p id="temp"></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="landscape" id="landscape">
+            <div class="landscape" id="landscape">
       <div class="dimness" id="dimness">
         <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
       </div>
@@ -161,6 +132,40 @@
           <div class="warmth" id="warmth"></div>
           <div class="coldness" id="coldness"></div>
     </div>
+  </div>
+      <div class="controllers">
+          <div class="time" id="time">
+              <div class="vbox">
+              <p class="t" id="h">00</p>
+              </div>
+              <div class="vbox">
+              <div class="i" id="i">+</div>
+              <p class="t" id="colon">:</p>
+              <div class="i" id="d">-</div>
+              </div>
+              <div class="vbox">
+              <p class="t" id="m">00</p>
+              </div>
+              <div class="vbox">
+              <p class="t" id="meridian"></p>
+              </div>
+            </div>
+          <div class="midline">
+            <button class="power" id="power"></button>
+            <div class="weather-controls">
+              <button class="rain-button" id="rain-button">🌧</button>
+              <button class="fog-button" id="fog-button">༄</button>
+              <button class="thunder-button" id="thunder-button">🗲</button>
+              <button class="snow-button" id="snow-button">❅</button>
+          </div>
+          </div>
+            <div class="knob" id="knob">
+                <div class="content"></div>
+                <p id="temp"></p>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <div class="musicbox">
       <audio loop class="ambient" id="morning" src="urgay. [ambient tracks]\amb0bsed_Ch01_Morning.wav"></audio>
@@ -223,7 +228,7 @@
     // Ambient Music
     const ambient = document.getElementsByClassName('ambient');
     for (let i = 0; i  <= 13; i++) {
-      ambient[i].volume = 0.5;
+      ambient[i].volume = 0.3;
     }
     var music_status = 0;
     function addAmbience(a) {
@@ -314,7 +319,7 @@
         const centerY = rect.top + rect.height / 2;
         const angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
         const rotation = Math.abs((angle * (180 / Math.PI) + 90)%360);
-        content.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+        content.style.transform = `rotate(${rotation}deg)`;
 
         // Convert rotation to temperature
         const ub = 40; // Upper bound (40 degree Celsius)
@@ -474,6 +479,10 @@
         } else if (v == 1) {
             power('off');
             v = 0;
+            const ambient = document.getElementsByClassName('ambient');
+              for (let i = 0; i  <= 13; i++) {
+                ambient[i].muted = true;
+            }
             off.play();
         }
     });
