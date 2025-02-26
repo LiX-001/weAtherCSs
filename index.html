@@ -7,10 +7,6 @@
 <body bgcolor="black">
     <div class="c-container">
         <div class="circle" id="circle">
-             <div class="Music">
-              <button class="music-button" id="music-button">♫</button>
-              <div class="speaker" id="speaker">...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br>...............................<br></div>
-              </div>
     <div class="mainscreen">
             <div class="screen" id="screen"></div>
             <div class="cover" id="cover"></div>
@@ -166,24 +162,6 @@
         </div>
       </div>
     </div>
-
-    <div class="musicbox">
-      <audio loop class="ambient" id="morning" src="urgay. [ambient tracks]\amb0bsed_Ch01_Morning.wav"></audio>
-              <audio muted loop class="ambient" id="guitar1" src="urgay. [ambient tracks]\amb0bsed_Ch02_Guitar.wav"></audio>
-              <audio muted loop class="ambient" id="glitches" src="urgay. [ambient tracks]\amb0bsed_Ch03_Glitches.wav"></audio>
-              <audio muted loop class="ambient" id="piano" src="urgay. [ambient tracks]\amb0bsed_Ch04_Piano.wav"></audio>
-              <audio muted loop class="ambient" id="birds" src="urgay. [ambient tracks]\amb0bsed_Ch05_Birds.wav"></audio>
-              <audio muted loop class="ambient" id="night" src="urgay. [ambient tracks]\amb0bsed_Ch06_Night.wav"></audio>
-              <audio muted loop class="ambient" id="bass" src="urgay. [ambient tracks]\amb0bsed_Ch07_Bass.wav"></audio>
-              <audio muted loop class="ambient" id="guitar2" src="urgay. [ambient tracks]\amb0bsed_Ch08_Guitar 2.wav"></audio>
-              <audio muted loop class="ambient" id="funk" src="urgay. [ambient tracks]\amb0bsed_Ch09_Funk.wav"></audio>
-              <audio muted loop class="ambient" id="fmpad" src="urgay. [ambient tracks]\amb0bsed_Ch10_FM Pad.wav"></audio>
-              <audio muted loop class="ambient" id="beats" src="urgay. [ambient tracks]\amb0bsed_Ch11_Beats.wav"></audio>
-              <audio muted loop class="ambient" id="rain-a" src="urgay. [ambient tracks]\amb0bsed_Ch12_Rain.wav"></audio>
-              <audio muted loop class="ambient" id="thunder-a" src="urgay. [ambient tracks]\amb0bsed_Ch13_Thunder.wav"></audio>
-              <audio muted loop class="ambient" id="fog-a" src="urgay. [ambient tracks]\amb0bsed_Ch14_Fog wind.wav"></audio>
-              
-    </div>
 </body>
 <script>
     const circle = document.getElementById('circle');
@@ -192,7 +170,7 @@
     const knob = document.getElementById("knob");
     const temp = document.getElementById('temp');
     const content = document.querySelector('#knob .content');
-    const music_button = document.getElementById('music-button');
+    
     // Weather buttons
     const rain_button = document.getElementById('rain-button');
     const fog_button = document.getElementById('fog-button');
@@ -224,87 +202,6 @@
 
     // The landscape
     const landscape = document.getElementById('landscape');
-
-    // Ambient Music
-    const ambient = document.getElementsByClassName('ambient');
-    for (let i = 0; i  <= 13; i++) {
-      ambient[i].volume = 0.3;
-    }
-    var music_status = 0;
-    function addAmbience(a) {
-      if (music_status != 0) {
-        const track = document.getElementById(a);
-        console.log(track);
-        if (track.paused) { track.play(); };
-        track.muted = false;
-      }
-    };
-    function removeAmbience(a) {
-      if (music_status != 0) {
-        const track = document.getElementById(a);
-        if (track.paying) { track.pause(); };
-        track.muted = true;
-      }
-    };
-    function playAccordingToTime() {
-      if (t >= 6 && t <=12) {
-            addAmbience("morning");
-            addAmbience("birds");
-            addAmbience("piano");
-            addAmbience("glitches");
-            addAmbience("guitar1");
-            removeAmbience("night");
-            removeAmbience("bass");
-            removeAmbience("funk");
-            removeAmbience("fmpad");
-            removeAmbience("guitar2");
-            removeAmbience("beats");
-          }
-          if (t > 12 && t <= 16) {
-            addAmbience("guitar1");
-            addAmbience("glitches");
-            removeAmbience("morning");
-            removeAmbience("birds");
-            removeAmbience("piano");
-            removeAmbience("night");
-            removeAmbience("bass");
-            removeAmbience("guitar2");
-            removeAmbience("funk");
-            removeAmbience("fmpad");
-            removeAmbience("beats");
-          }
-          if (t < 6 || t > 16) {
-            addAmbience("night");
-            addAmbience("guitar2");
-            addAmbience("glitches");
-            addAmbience("bass");
-            addAmbience("funk");
-            addAmbience("fmpad");
-            addAmbience("beats");
-            removeAmbience("guitar1");
-            removeAmbience("morning");
-            removeAmbience("birds");
-            removeAmbience("piano");
-          }
-    }
-      music_button.addEventListener('click', function() {
-        if (music_status == 0) {
-          music_status = 1;
-          music_button.style.backgroundColor = 'rgb(255, 0, 0)';
-          playAccordingToTime();
-          if (isRaining == true) { addAmbience("rain-a"); } else { removeAmbience("rain-a"); };
-          if (isThundering == true) { addAmbience("thunder-a"); } else { removeAmbience("thunder-a"); };
-          if (isFogging == true) { addAmbience("fog-a"); } else { removeAmbience("fog-a"); };
-        } else {
-          music_status = 0;
-          music_button.style.backgroundColor = 'transparent';
-          const ambient = document.getElementsByClassName('ambient');
-            for (let i = 0; i  <= 13; i++) {
-              if (ambient[i].paying) { ambient[i].pause(); };
-              ambient[i].muted = true;
-            }
-          }
-      });
 
     // Temperature Knob
     knob.addEventListener('mousedown', function() {
