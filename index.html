@@ -296,7 +296,7 @@
       } else if (x == 25) {i = 9;} else if (x >= 6 && x <= 16) {i = 0;}
       increment = i*8.3;
       dimness.style.opacity = `${increment}%`;
-      playAccordingToTime();
+      
     });
     decrease.addEventListener('click', function() {
       h = parseInt(hour.textContent);
@@ -314,7 +314,7 @@
       } else if (x == 25) {i = 9;} else if (x >= 6 && x <= 16) {i = 0;}
       increment = i*8.3;
       dimness.style.opacity = `${increment}%`;
-      playAccordingToTime();
+      
     });
     
     function power(x) {
@@ -368,21 +368,13 @@
 
     const power_button = document.getElementById('power');
     var v = 0
-    var on = new Audio('urgay. [ambient tracks]/Sf 1 on.wav');
-    var off = new Audio('urgay. [ambient tracks]/Sf 0 off.wav');
     power_button.addEventListener('click', function() {
         if (v == 0) {
             power('on');
             v = 1;
-            on.play();
         } else if (v == 1) {
             power('off');
             v = 0;
-            const ambient = document.getElementsByClassName('ambient');
-              for (let i = 0; i  <= 13; i++) {
-                ambient[i].muted = true;
-            }
-            off.play();
         }
     });
 
