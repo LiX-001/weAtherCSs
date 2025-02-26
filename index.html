@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>USER CONTROLLED WEATHER DISPLAY</title>
-    <link rel="stylesheet" href="duck.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="black">
     <div class="c-container">
@@ -393,7 +393,7 @@
         rain.style.display = 'flex';
         landscape.style.backgroundImage = `radial-gradient(ellipse , rgba(29, 31, 34, 0.788), rgba(19, 23, 27, 0.342))`;
         isRaining = true
-        addAmbience('rain-a');
+        
         } 
         else if (isRaining == true) {
           raindropCount = 0;
@@ -401,7 +401,7 @@
           rain.style.display = 'none';
           landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
           isRaining = false; 
-          removeAmbience('rain-a');
+          
           }
         });
 
@@ -414,13 +414,13 @@
           temp.innerHTML = "2°C"
           adjust_temp(2)
           isFogging = true;
-          addAmbience('fog-a');
+         
         } else if (isFogging == true) {
           fog_button.style.backgroundColor = 'transparent';
           landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
           fog.style.opacity = '0%';
           isFogging = false;
-          removeAmbience('fog-a');
+          
         }
       });
 
@@ -431,13 +431,13 @@
           landscape.style.backgroundImage = `radial-gradient(ellipse, rgba(27, 26, 26, 0.76), rgba(5, 5, 7, 0.562))`;
           thunder.style.display = 'flex';
           isThundering = true
-          addAmbience('thunder-a');
+          
         } else if (isThundering == true) {
           thunder_button.style.backgroundColor = 'transparent';
           landscape.style.backgroundImage = `radial-gradient(ellipse , rgb(60, 128, 255), rgb(158, 200, 255))`;
           thunder.style.display = 'none';
           isThundering = false;
-          removeAmbience('thunder-a');
+          
         }
       });
 
